@@ -1,0 +1,23 @@
+---
+parser: babel-eslint
+
+env:
+  mocha: true
+
+extends:
+  - standard
+  - plugin:prettier/recommended
+
+plugins:
+  - prettier
+
+rules:
+  prettier/prettier:
+    - error
+    - singleQuote: true
+      semi: false
+      printWidth: 100
+
+  complexity:
+    - error
+    - 10

@@ -1,0 +1,14 @@
+Preset name changed in babel 7 
+
+Forwarded: not-needed
+
+--- a/.babelrc
++++ b/.babelrc
+@@ -1,6 +1,6 @@
+ {
+   "presets": [
+-    "env"
++    "@babel/env"
+   ],
+   "env": {
+     "development": {

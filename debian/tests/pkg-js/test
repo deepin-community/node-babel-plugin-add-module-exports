@@ -1,0 +1,5 @@
+# TODO: update tests to babel-plugin-espower 3.x for core-js@3
+# mocha --require @babel/register
+if test "$AUTOPKGTEST_TMP" != ""; then
+	exit 77
+fi
