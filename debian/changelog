@@ -1,3 +1,29 @@
+node-babel-plugin-add-module-exports (1.0.4+dfsg1~cs5.8.0-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Update lintian override info format in d/source/lintian-overrides on
+    line 2
+  * Update standards version to 4.6.1, no changes needed
+
+  [ Yadd ]
+  * Add patch for core-js 3
+  * Don't install components, needed only for tests and currently broken
+    (fix autopkgtest)
+
+ -- Yadd <yadd@debian.org>  Wed, 30 Nov 2022 19:59:17 +0100
+
+node-babel-plugin-add-module-exports (1.0.4+dfsg1~cs5.8.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Install components
+
+ -- Yadd <yadd@debian.org>  Tue, 21 Dec 2021 22:19:29 +0100
+
 node-babel-plugin-add-module-exports (1.0.4+dfsg1~cs5.8.0-2) unstable; urgency=medium
 
   * Team upload
@@ -31,9 +57,7 @@ node-babel-plugin-add-module-exports (1.0.4+dfsg1~cs5.8.0-1) experimental; urgen
   * Add lintian override for false positive test data
   * Run upstream tests using mocha
   * Add babel-preset-power-assert as component
-  * New upstream version 1.0.4+~cs2.0.0
   * Add babel-plugin-empower-assert and babel-plugin-espower as components
-  * New upstream version 1.0.4+~cs5.8.0
   * Disable tests (needs core-js 2)
   * Update copyright for embedded components
   * Bump Standards-Version to 4.5.1 (no changes needed)

@@ -1,0 +1,29 @@
+Description: update to core-js 3
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-11-30
+
+--- a/babel-plugin-espower/lib/babel-espower-visitor.js
++++ b/babel-plugin-espower/lib/babel-espower-visitor.js
+@@ -2,8 +2,8 @@
+ 
+ var CallMatcher = require('call-matcher');
+ var babylon = require('babylon');
+-var assign = require('core-js/library/fn/object/assign');
+-var find = require('core-js/library/fn/array/find');
++var assign = require('core-js/features/object/assign');
++var find = require('core-js/features/array/find');
+ var BabelAssertionVisitor = require('./babel-assertion-visitor');
+ 
+ function BabelEspowerVisitor (babel, opts) {
+--- a/babel-plugin-espower/lib/create-espower-visitor.js
++++ b/babel-plugin-espower/lib/create-espower-visitor.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ var defaultOptions = require('./default-options');
+-var assign = require('core-js/library/fn/object/assign');
++var assign = require('core-js/features/object/assign');
+ var BabelEspowerVisitor = require('./babel-espower-visitor');
+ 
+ module.exports = function createEspowerVisitor (babel, options) {
