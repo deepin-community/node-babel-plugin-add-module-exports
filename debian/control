@@ -6,12 +6,11 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
  debhelper-compat (= 13)
- , nodejs
  , dh-sequence-nodejs
  , node-babel-cli
  , mocha <!nocheck>
  , node-babel-register <!nocheck>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Homepage: https://github.com/lijunle/babel-plugin-add-module-exports#readme
 Vcs-Git: https://salsa.debian.org/js-team/node-babel-plugin-add-module-exports.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-babel-plugin-add-module-exports
@@ -19,10 +18,9 @@ Rules-Requires-Root: no
 
 Package: node-babel-plugin-add-module-exports
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
 Multi-Arch: foreign
+Provides: ${nodejs:Provides}
 Description: Babel plugin for default module.exports like babel version 5
  Babel@6 doesn't export default module.exports any more. This plugin follows
  the babel@5 behavior - add the module.exports if only the export default
